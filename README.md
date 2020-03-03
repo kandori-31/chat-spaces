@@ -66,7 +66,3 @@ Things you may want to cover:
 - has_many :messages
 - has_many :users
 - has-many :users, through: :groups_users
-
-
-
-
