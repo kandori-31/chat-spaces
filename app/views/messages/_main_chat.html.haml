@@ -1,0 +1,34 @@
+.chat-main
+  .chat-main__group-info
+    .chat-main__group-info__left
+      .chat-main__group-info__left__name
+        test
+      .chat-main__group-info__left__member
+        member:masa
+    .chat-main__group-info__right
+    = link_to "Edit","#", class:"chat-main__group-info__right__edit" 
+  .chat-main__message-list
+    .chat-main__message-list__message
+      .chat-main__message-list__message__upper
+        .chat-main__message-list__message__upper__name
+          名前
+        .chat-main__message-list__message__upper__date
+          2019/02/12(Wed)23:23:23
+      .chat-main__message-list__message__text
+        test
+    .chat-main__message-list__message
+      .chat-main__message-list__message__upper
+        .chat-main__message-list__message__upper__name
+          名前
+        .chat-main__message-list__message__upper__date
+          2019/02/12(Wed)23:23:23
+      .chat-main__message-list__message__text
+        test
+  .chat-main__message-form
+    %form
+      .chat-main__message-form__input-box
+        %textarea{:placeholder => "type a message", class:'chat-main__message-form__input-box__text'}
+        %label{class: "chat-main__message-form__input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file"}
+      %input{type: "submit", value: "Send", class:'chat-main__message-form__send-box'}
