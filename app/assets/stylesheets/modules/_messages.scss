@@ -63,14 +63,16 @@ $mainWHITE:#fff;
       height: 91px;
       width : 300px;
       padding: 20px 5px 40px 5px;
-
+      
       &__group-name{
         font-size: 15px;
         padding-bottom:5px;
+        color:$mainWHITE;
       }
 
       &__message{
         font-size:11px;
+        color:$mainWHITE;
       }
     }
   }
