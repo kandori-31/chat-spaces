@@ -3,9 +3,9 @@ $(function () {
   var buildHTML = function (message) {
     if (message.image && message.content) {
       var html =
-        `<div class="chat-main__message-list__message" data-message-id=` + message.id + `>`
-          `< class="chat-main__message-list__message__upper">` + message.user_name +
-        `<div class="chat-main__message-list__message__upper__name">
+        `<div class="chat-main__message-list__message">
+          < div class="chat-main__message-list__message__upper"> 
+        <div class="chat-main__message-list__message__upper__name">
             ${message.user_name}
           </div>
           <div class="chat-main__message-list__message__upper__date">
