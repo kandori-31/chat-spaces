@@ -9,6 +9,8 @@ set :application, 'chat-spaces'
 set :repo_url,  'git@github.com:kandori-31/chat-spaces.git'
 
 # バージョンが変わっても共通で参照するディレクトリを指定
+set :linked_files, %w{ config/secrets.yml }
+
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
 
 set :rbenv_type, :user
